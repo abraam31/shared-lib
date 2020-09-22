@@ -1,3 +1,3 @@
-def call (map config) {
+def call (Map config = [:]) {
 	sh ''' ${config.command} '''
 }
