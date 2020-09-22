@@ -1,3 +1,3 @@
 def call (Map config = [:]) {
-	sh ' ${config.command} '
+	sh "${config.command}"
 }
