@@ -6,11 +6,11 @@ import static org.yaml.snakeyaml.DumperOptions.FlowStyle.BLOCK
 
 helper.registerAllowedMethod("readYaml", [Map.class], null)
 
-class Pipeline {
+class pipeline {
     def script
     def configurationFile
 
-    Pipeline(configurationFile) {
+    pipeline(configurationFile) {
         //this.script = script
         this.configurationFile = configurationFile
     }
