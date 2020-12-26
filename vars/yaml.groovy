@@ -3,8 +3,8 @@ def call(String configFile) {
 		datas = readYaml (file: configFile) 
 		
 		// notifications vars 
-		def notificationRecipient = datas.notifications.email.recipients.toString()
-		def notificationOnStart = datas.notifications.email.on_start.toString()
+		env.notificationRecipient = datas.notifications.email.recipients.toString()
+		env.notificationOnStart = datas.notifications.email.on_start.toString()
 		notificationOnFailure = datas.notifications.email.on_failure.toString()
 		notificationOnSuccess = datas.notifications.email.on_success.toString()
 
