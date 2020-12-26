@@ -25,4 +25,6 @@ def call(String configFile) {
 		// deploy vars 
 		deployProjectFolder = datas.build.projectFolder.toString()
 		deployCommand = datas.deploy.deployCommand.toString()
+		echo "Send on start: ${notificationOnStart}"
+
 }
