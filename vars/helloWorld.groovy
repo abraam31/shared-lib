@@ -1,4 +1,4 @@
-def call(Map config) {
-    sh "echo Hello world, ${config.name}"
- 	sh "echo My roots are ${config.last}"
+def call(String name, String last) {
+    sh "echo Hello world, ${name}"
+    sh "echo My roots are ${last}"
 }
