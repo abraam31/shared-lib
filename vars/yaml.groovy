@@ -1,4 +1,5 @@
 def call(String configFile) {
+	script {
 		datas = readYaml (file: configFile) 
 		
 		// notifications vars 
@@ -26,5 +27,5 @@ def call(String configFile) {
 		deployProjectFolder = datas.build.projectFolder.toString()
 		deployCommand = datas.deploy.deployCommand.toString()
 		echo "Send on start: ${notificationOnStart}"
-
+	}
 }
