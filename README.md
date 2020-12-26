@@ -1,1 +1,1 @@
-# training-pipeline-shared-library-sample.
+# training-pipeline-shared-library-sample
