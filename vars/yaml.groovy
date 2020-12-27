@@ -18,7 +18,7 @@ def call(String configFile) {
 
 		// build vars 
 		env.buildCommand = datas.build.buildCommand.toString()
-		env.pwdCommand = datas.build.buildCommand.toString()		
+		env.pwdCommand = datas.build.pwdCommand.toString()		
 		env.buildProjectFolder = datas.build.projectFolder.toString()
 		
 		// Database vars 
@@ -28,7 +28,7 @@ def call(String configFile) {
 		// deploy vars 
 		env.deployProjectFolder = datas.build.projectFolder.toString()
 		env.deployCommand = datas.deploy.deployCommand.toString()
-		env.listCommand = datas.deploy.deployCommand.toString()
+		env.listCommand = datas.deploy.listCommand.toString()
 
 	}
 }
