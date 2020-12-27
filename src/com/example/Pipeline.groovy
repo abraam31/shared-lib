@@ -13,17 +13,6 @@ class Pipeline {
     }
 
     def execute() {
-//    ===================== Your Code Starts Here =====================
-//    Note : use "script" to access objects from jenkins pipeline run (WorkflowScript passed from Jenkinsfile)
-//           for example: script.node(), script.stage() etc
 		println("trying a thing")
-		
-
-
-//    ===================== Parse configuration file ==================
-
-//    ===================== Run pipeline stages =======================
-
-//    ===================== End pipeline ==============================
     }
 }
