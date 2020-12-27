@@ -16,9 +16,7 @@ class Pipeline {
 //    ===================== Your Code Starts Here =====================
 //    Note : use "script" to access objects from jenkins pipeline run (WorkflowScript passed from Jenkinsfile)
 //           for example: script.node(), script.stage() etc
-		Yaml parser = new Yaml()
-		List example = parser.load((configurationFile as File).text)
-		example.each{println it.subject}
+		println("trying a thing")
 		
 
 
