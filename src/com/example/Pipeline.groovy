@@ -12,7 +12,7 @@ class Pipeline {
         this.configurationFile = configurationFile
     }
 
-    void execute() {
+    public void execute() {
 		println("trying a thing")
     }
 }
