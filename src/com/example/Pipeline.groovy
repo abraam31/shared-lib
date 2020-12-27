@@ -12,7 +12,7 @@ class Pipeline {
         this.configurationFile = configurationFile
     }
 
-    def execute() {
+    void execute() {
 		println("trying a thing")
     }
 }
