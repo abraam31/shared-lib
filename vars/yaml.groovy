@@ -1,5 +1,6 @@
 def call(String configFile) {
 	script {
+		// Reading the config.yml file and parsing the yaml content with builtin JenkinsDSL readYaml method
 		datas = readYaml (file: configFile) 
 		
 		// notifications vars 
@@ -17,6 +18,7 @@ def call(String configFile) {
 
 		// build vars 
 		env.buildCommand = datas.build.buildCommand.toString()
+		env.pwdCommand = datas.build.buildCommand.toString()		
 		env.buildProjectFolder = datas.build.projectFolder.toString()
 		
 		// Database vars 
@@ -26,5 +28,7 @@ def call(String configFile) {
 		// deploy vars 
 		env.deployProjectFolder = datas.build.projectFolder.toString()
 		env.deployCommand = datas.deploy.deployCommand.toString()
+		env.listCommand = datas.deploy.deployCommand.toString()
+
 	}
 }
