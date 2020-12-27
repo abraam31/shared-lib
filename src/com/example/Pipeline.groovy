@@ -4,11 +4,11 @@ package com.example
 import org.yaml.snakeyaml.Yaml
 	
 class Pipeline {
-    def script
+    // def script
     def configurationFile
 
-    Pipeline(script, configurationFile) {
-        this.script = script
+    Pipeline(configurationFile) {
+        // this.script = script
         this.configurationFile = configurationFile
     }
 
